@@ -3,7 +3,8 @@ if status is-interactive
     starship init fish | source
     zoxide init fish | source
     abbr -a v nvim
-    abbr -a ai opencode
+    abbr --add --position command aip 'opencode --port'
+    abbr --add --position command ai opencode
     abbr -a lg lazygit
     abbr -a ip 'ipconfig getifaddr en0'
     abbr -a y yazi
